@@ -1,7 +1,7 @@
 Summary: A graphical GCOV front-end
 Name: lcov
 Version: 1.14
-Release: 1
+Release: 2
 License: GPLv2+
 Group: Development/Tools
 URL: http://ltp.sourceforge.net/coverage/lcov.php
@@ -9,6 +9,8 @@ Source0: http://downloads.sourceforge.net/ltp/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildArch: noarch
 Requires: perl >= 5.8.8
+Requires: perl-PerlIO-gzip
+Requires: perl-JSON
 
 %description
 LCOV is a graphical front-end for GCC's coverage testing tool gcov. It collects
